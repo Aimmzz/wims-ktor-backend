@@ -1,0 +1,9 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules: com.wims.ApplicationKt.module
+
+app:
+  name: "WIMS API"
+  version: 1.0.0
