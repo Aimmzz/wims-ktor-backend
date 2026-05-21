@@ -38,4 +38,10 @@ dependencies {
     // ── Testing ───────────────────────────────────────────────
     testImplementation("io.ktor:ktor-server-test-host:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+
+    // ── Validation ────────────────────────────────────────────
+    implementation("io.konform:konform:0.9.0")
+
+    // ── Error Handling ────────────────────────────────────────
+    implementation("io.ktor:ktor-server-status-pages:$ktor_version")
 }

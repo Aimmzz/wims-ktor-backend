@@ -1,4 +1,4 @@
-package plugins
+package com.wims.plugins
 
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.Application

@@ -1,4 +1,4 @@
-package routes
+package com.wims.routes
 
 import io.ktor.http.*
 import io.ktor.server.response.*
