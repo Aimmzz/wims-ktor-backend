@@ -27,3 +27,9 @@ fun failed(message: String, errors: List<FieldError>? = null) = ApiResponse<Noth
     message = message,
     errors = errors
 )
+
+fun successMessage(message: String) = ApiResponse<Nothing?>(
+    success = true,
+    message = message,
+    data = null
+)

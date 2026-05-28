@@ -1,5 +1,6 @@
 package com.wims
 
+import com.wims.plugins.configureDependencyInjection
 import com.wims.plugins.configureRouting
 import com.wims.plugins.configureSerialization
 import com.wims.plugins.configureStatusPages
@@ -17,6 +18,7 @@ fun main(){
 }
 
 fun Application.module() {
+    configureDependencyInjection()
     configureSerialization()
     configureStatusPages()
     configureRouting()
