@@ -1,6 +1,7 @@
 val kotlin_version: String by project
 val ktor_version: String by project
 val logback_version: String by project
+val koin_version: String by project
 
 plugins {
     kotlin("jvm") version "2.3.10"
@@ -44,4 +45,9 @@ dependencies {
 
     // ── Error Handling ────────────────────────────────────────
     implementation("io.ktor:ktor-server-status-pages:$ktor_version")
+
+    // ── Koin ─────────────────────────────────────────────────
+    implementation(platform("io.insert-koin:koin-bom:$koin_version"))
+    implementation("io.insert-koin:koin-ktor")
+    implementation("io.insert-koin:koin-logger-slf4j")
 }
